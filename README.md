@@ -11,10 +11,10 @@ $('#input').btooltip({title : 'msg', placement: 'right'});
 ## Options
 
 ```
-@param placement   | type : string  | default : top  | how to position the popover - top | bottom | left | right
-@param title       | type : string  |                | default title value if `title` tag isn't present
-@param destroy     | type : boolean | default : true | destroy tooltip or not
-@param destroyTime | type : number  | default : 2000 | time to tooltip destroy
+@param placement | type : string  | default : top  | how to position the popover - top | bottom | left | right
+@param title     | type : string  |                | default title value if `title` tag isn't present
+@param destroy   | type : boolean | default : true | destroy tooltip or not
+@param time      | type : number  | default : 2000 | time to tooltip destroy (miliseconds)
 ```
 
 ## Contributing
