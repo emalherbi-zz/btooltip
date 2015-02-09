@@ -1,4 +1,4 @@
-# BTooltip
+# [BTooltip](http://emalherbi.github.io/btooltip/)
 
 The BTooltip plugin JS, created for destroy [tooltip bootstrap](http://getbootstrap.com/javascript/#tooltips) automatically!
 

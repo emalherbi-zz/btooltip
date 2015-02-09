@@ -57,7 +57,7 @@ module.exports = function(grunt) {
     /* commit on gh-pages github */
     'gh-pages': {
       options: {
-        base: 'docs/_site/',
+        base: 'test/',
         message: 'auto-generated commit'
       },
       src: ['**/*']
@@ -85,6 +85,13 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask('deploy', [
+    'clean',
+    'concat',
+    'uglify',
+    'gh-pages'
+  ]);
+
+  grunt.registerTask('bower', [
     'clean',
     'concat',
     'uglify',
