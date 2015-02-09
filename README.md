@@ -1,6 +1,7 @@
 # [BTooltip](http://emalherbi.github.io/btooltip/)
 
 [![Bower](https://img.shields.io/bower/v/bootstrap.svg)](https://github.com/emalherbi/btooltip/)
+[![Build Status](https://travis-ci.org/emalherbi/btooltip.svg?branch=master)](https://travis-ci.org/emalherbi/btooltip)
 
 The BTooltip plugin JS, created for destroy [tooltip bootstrap](http://getbootstrap.com/javascript/#tooltips) automatically!
 <img align="right" height="150" src="http://bower.io/img/bower-logo.png">
