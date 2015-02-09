@@ -1,6 +1,6 @@
 # BTooltip
 
-The BTooltip plugin JS, created for destroy tooltip automatically!
+The BTooltip plugin JS, created for destroy [tooltip bootstrap](http://getbootstrap.com/javascript/#tooltips) automatically!
 
 ## Usage
 
