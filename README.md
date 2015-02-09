@@ -1,6 +1,29 @@
 # [BTooltip](http://emalherbi.github.io/btooltip/)
 
+[![Bower](https://img.shields.io/bower/v/bootstrap.svg)](https://github.com/emalherbi/btooltip/)
+
 The BTooltip plugin JS, created for destroy [tooltip bootstrap](http://getbootstrap.com/javascript/#tooltips) automatically!
+<img align="right" height="150" src="http://bower.io/img/bower-logo.png">
+
+## Bower.io
+
+This package is available on Bower.
+
+#### Installing
+
+```sh
+# install a package and add it to bower.json
+$ bower install btooltip --save
+```
+
+#### Install Bower.io
+
+```sh
+$ npm install -g bower
+```
+
+Bower depends on [Node.js](http://nodejs.org/) and [npm](http://npmjs.org/). Also make sure that [git](http://git-scm.com/) is installed as some bower
+packages require it to be fetched and installed.
 
 ## Usage
 
