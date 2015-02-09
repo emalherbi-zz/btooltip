@@ -1,21 +1,6 @@
 module.exports = function(grunt) {
   'use strict';
 
-	// Load the plugin that clean files and directories.
-	grunt.loadNpmTasks('grunt-contrib-clean');
-  // Load the plugin that concatenate files.
-  grunt.loadNpmTasks('grunt-contrib-concat');
-  // Load the plugin that copy files and directories.
-  grunt.loadNpmTasks('grunt-contrib-copy');
-  // Load the plugin that minify and concatenate ".js" files.
-	grunt.loadNpmTasks('grunt-contrib-uglify');
-  // Publish to GitHub Pages with Grunt
-  grunt.loadNpmTasks('grunt-gh-pages');
-  // Bump package version, create tag, commit, push ...
-  grunt.loadNpmTasks('grunt-bump');
-	// Automatic notifications when tasks fail.
-	grunt.loadNpmTasks('grunt-notify');
-
   grunt.initConfig({
 	  pkg: grunt.file.readJSON('package.json'),
     properties: grunt.file.readJSON('properties.json'),
@@ -40,6 +25,10 @@ module.exports = function(grunt) {
            "<%= properties.dist %>/<%= pkg.name %>.js" : ['<%= pkg.name %>.js']
         },
       },
+    },
+
+    jshint: {
+      all: ['Gruntfile.js', '<%= properties.dist %>/<%= pkg.name %>.js']
     },
 
     /* js file minification */
@@ -77,23 +66,33 @@ module.exports = function(grunt) {
 
 	});
 
+	// Loading dependencies
+  for (var key in grunt.file.readJSON('package.json').devDependencies) {
+    if (key !== 'grunt' && key.indexOf('grunt') === 0) {
+      grunt.loadNpmTasks(key);
+    }
+  }
+
 	// tasks
   grunt.registerTask('build', [
     'clean',
     'concat',
+    'jshint',
     'uglify'
+  ]);
+
+  grunt.registerTask('ghpages', [
+    'clean',
+    'concat',
+    'uglify',
+    'jshint',
+    'gh-pages'
   ]);
 
   grunt.registerTask('deploy', [
     'clean',
     'concat',
-    'uglify',
-    'gh-pages'
-  ]);
-
-  grunt.registerTask('bower', [
-    'clean',
-    'concat',
+    'jshint',
     'uglify',
     'gh-pages',
     'bump'

@@ -3,7 +3,7 @@
  * Copyright 2010-2015 emalherbi
  * Licensed under MIT (http://en.wikipedia.org/wiki/MIT_License)
  */
-+(function($) {
+(function($) {
   if (!$.Btooltip) {
     $.Btooltip = {};
   }
