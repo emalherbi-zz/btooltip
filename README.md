@@ -1,8 +1,8 @@
-# btooltip
+# BTooltip
 
-The Bootstrap Tooltip plugin JS, for destroy tooltip automatically.
+The BTooltip plugin JS, created for destroy tooltip automatically!
 
-## Example
+## Usage
 
 ```javascript
 $('#input').btooltip({title : 'msg', placement: 'right'});
@@ -16,6 +16,10 @@ $('#input').btooltip({title : 'msg', placement: 'right'});
 @param destroy   | type : boolean | default : true | destroy tooltip or not
 @param time      | type : number  | default : 2000 | time to tooltip destroy (miliseconds)
 ```
+
+## Required
+
+[jQuery](http://jquery.com/). [Bootstrap](http://getbootstrap.com/).
 
 ## Contributing
 
