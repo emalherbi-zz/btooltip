@@ -2,6 +2,9 @@
 
 [![Bower](https://img.shields.io/bower/v/bootstrap.svg)](https://github.com/emalherbi/btooltip/)
 [![Build Status](https://travis-ci.org/emalherbi/btooltip.svg?branch=master)](https://travis-ci.org/emalherbi/btooltip)
+[![status](https://sourcegraph.com/api/repos/github.com/emalherbi/btooltip/.badges/status.svg)](https://sourcegraph.com/github.com/emalherbi/btooltip)
+[![views](https://sourcegraph.com/api/repos/github.com/emalherbi/btooltip/.counters/views.svg)](https://sourcegraph.com/github.com/emalherbi/btooltip)
+[![views 24h](https://sourcegraph.com/api/repos/github.com/emalherbi/btooltip/.counters/views-24h.svg)](https://sourcegraph.com/github.com/emalherbi/btooltip)
 
 The BTooltip plugin JS, created for destroy [tooltip bootstrap](http://getbootstrap.com/javascript/#tooltips) automatically!
 <img align="right" height="150" src="http://bower.io/img/bower-logo.png">

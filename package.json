@@ -1,6 +1,6 @@
 {
   "name": "btooltip",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The Bootstrap Tooltip plugin JS, for destroy tooltip automatically.",
   "main": "btooltip.js",
   "homepage": "http://emalherbi.github.io/btooltip/",
