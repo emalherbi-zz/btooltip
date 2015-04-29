@@ -1,6 +1,6 @@
 {
   "name": "btooltip",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "The Bootstrap Tooltip plugin JS, for destroy tooltip automatically.",
   "main": "btooltip.js",
   "homepage": "http://emalherbi.github.io/btooltip/",
@@ -22,6 +22,6 @@
     "grunt-notify": "^0.3.1"
   },
   "scripts": {
-    "test": "grunt --verbose"
+    "test": "npm test --verbose"
   }
 }
