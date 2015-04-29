@@ -1,5 +1,5 @@
 /*!
- * btooltip v1.0.1 (http://emalherbi.github.io/btooltip/)
+ * btooltip v1.0.3 (http://emalherbi.github.io/btooltip/)
  * Copyright 2010-2015 emalherbi
  * Licensed under MIT (http://en.wikipedia.org/wiki/MIT_License)
  */
@@ -29,7 +29,8 @@
       base.$el.tooltip('destroy').tooltip(opt).tooltip('toggle');
 
       if (base.options.destroy) {
-        window.setTimeout(function() { base.$el.tooltip('destroy'); }, base.options.time);
+        var $el = base.$el;
+        window.setTimeout(function() { $el.tooltip('destroy'); }, base.options.time);
       }
 
       return true;
