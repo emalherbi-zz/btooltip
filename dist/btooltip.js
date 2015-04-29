@@ -1,5 +1,5 @@
 /*!
- * btooltip v2.0.0 (http://emalherbi.github.io/btooltip/)
+ * btooltip v2.0.1 (http://emalherbi.github.io/btooltip/)
  * Copyright 2010-2015 emalherbi
  * Licensed under MIT (http://en.wikipedia.org/wiki/MIT_License)
  */
