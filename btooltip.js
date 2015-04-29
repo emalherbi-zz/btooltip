@@ -24,7 +24,8 @@
       base.$el.tooltip('destroy').tooltip(opt).tooltip('toggle');
 
       if (base.options.destroy) {
-        window.setTimeout(function() { base.$el.tooltip('destroy'); }, base.options.time);
+        var $el = base.$el;
+        window.setTimeout(function() { $el.tooltip('destroy'); }, base.options.time);
       }
 
       return true;
